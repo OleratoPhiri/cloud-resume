@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Olerato Phiri | Cloud Engineer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Olerato Phiri</h1>
+        <p class="tagline">Aspiring Cloud Engineer</p>
+        <div class="contact-links">
+            <a href="mailto:ole.phiri@gmail.com">ole.phiri@gmail.com</a>
+            <span>|</span>
+            <a href="https://linkedin.com/in/olerato-phiri-387726218" target="_blank">LinkedIn</a>
+            <span>|</span>
+            <a href="https://github.com/OleratoPhiri" target="_blank">GitHub</a>
+        </div>
+    </header>
+
+    <!-- VISITOR COUNTER (we'll wire this up in Phase 4) -->
+    <div class="counter-box">
+        <p>👀 You are visitor number: <span id="visitor-count">...</span></p>
+    </div>
+
+    <!-- SUMMARY -->
+    <section>
+        <h2>Summary</h2>
+        <p>
+            Motivated and detail-oriented aspiring Cloud Engineer with hands-on experience 
+            building serverless web applications, multi-tier architectures, and data pipelines 
+            on AWS. Proficient in Python, Linux, HTML/CSS, and Infrastructure as Code (Terraform). 
+            Passionate about automation, security best practices, and building scalable systems.
+        </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section>
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Cloud & Infrastructure</h3>
+                <ul>
+                    <li>Amazon Web Services (S3, Lambda, CloudFront, API Gateway, DynamoDB, EC2, VPC, RDS)</li>
+                    <li>Terraform (Infrastructure as Code)</li>
+                    <li>AWS CLI</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Languages & Scripting</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>Bash / Shell Scripting</li>
+                    <li>HTML & CSS</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>DevOps & Tools</h3>
+                <ul>
+                    <li>Git & GitHub</li>
+                    <li>GitHub Actions (CI/CD)</li>
+                    <li>Linux</li>
+                    <li>VS Code</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section>
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>Cloud Resume Challenge — Serverless Web App <span class="tag">AWS | Terraform | GitHub Actions</span></h3>
+            <ul>
+                <li>Hosted a static resume website on Amazon S3, distributed globally via CloudFront with HTTPS</li>
+                <li>Built a serverless visitor counter using JavaScript, API Gateway, AWS Lambda (Python), and DynamoDB</li>
+                <li>Deployed the full infrastructure using Terraform and automated deployments via a GitHub Actions CI/CD pipeline</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <h3>Multi-Tier Web Architecture <span class="tag">VPC | EC2 | RDS | Auto Scaling</span></h3>
+            <ul>
+                <li>Designed a custom VPC across two Availability Zones with public and private subnets</li>
+                <li>Deployed EC2 web servers behind a Network Load Balancer with an Auto Scaling Group</li>
+                <li>Configured a Multi-AZ RDS database using IAM roles and least-privilege access</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <h3>Serverless Data Pipeline <span class="tag">Lambda | S3 | Glue | Athena | CloudWatch</span></h3>
+            <ul>
+                <li>Built an event-driven pipeline triggered by S3 uploads to process and clean raw data using Lambda</li>
+                <li>Catalogued processed data with AWS Glue and queried it using Amazon Athena (SQL)</li>
+                <li>Implemented CloudWatch monitoring and SNS alerts for pipeline failure notifications</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section>
+        <h2>Certifications</h2>
+        <ul>
+            <li>AWS Certified Cloud Practitioner <em>(in progress / add date when earned)</em></li>
+        </ul>
+    </section>
+
+    <!-- EDUCATION -->
+    <section>
+        <h2>Education</h2>
+        <p><strong>Matric, Diploma</strong> — Pretoria Chinese School, 2013</p>
+    </section>
+
+    <footer>
+        <p>Built and deployed on AWS ☁️</p>
+    </footer>
+
+    <!-- Visitor counter script — we'll complete this in Phase 4 -->
+    <script src="counter.js"></script>
+
+</body>
+</html>

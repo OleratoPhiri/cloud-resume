@@ -1,0 +1,175 @@
+/* ===== BASE RESET & FONTS ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #2d3748;
+    line-height: 1.7;
+}
+
+/* ===== PAGE WRAPPER ===== */
+header, section, footer, .counter-box {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 30px 40px;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: linear-gradient(135deg, #1a365d, #2b6cb0);
+    color: white;
+    max-width: 100%;
+    padding: 50px 40px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    opacity: 0.85;
+    margin-bottom: 16px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.contact-links a {
+    color: #bee3f8;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.contact-links a:hover {
+    text-decoration: underline;
+}
+
+/* ===== VISITOR COUNTER ===== */
+.counter-box {
+    background: #ebf8ff;
+    border-left: 4px solid #2b6cb0;
+    padding: 14px 40px;
+    font-size: 0.95rem;
+    color: #2c5282;
+    max-width: 100%;
+}
+
+/* ===== SECTIONS ===== */
+section {
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+}
+
+section h2 {
+    font-size: 1.3rem;
+    color: #2b6cb0;
+    border-bottom: 2px solid #bee3f8;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ===== SKILLS GRID ===== */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.skill-category h3 {
+    font-size: 0.95rem;
+    color: #4a5568;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-category ul li {
+    font-size: 0.9rem;
+    padding: 3px 0;
+    color: #4a5568;
+}
+
+.skill-category ul li::before {
+    content: "▸ ";
+    color: #2b6cb0;
+}
+
+/* ===== PROJECTS ===== */
+.project {
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.project:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.project h3 {
+    font-size: 1rem;
+    color: #1a365d;
+    margin-bottom: 10px;
+}
+
+.tag {
+    display: inline-block;
+    background: #ebf8ff;
+    color: #2b6cb0;
+    font-size: 0.75rem;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-weight: 400;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+.project ul {
+    padding-left: 18px;
+}
+
+.project ul li {
+    font-size: 0.9rem;
+    color: #4a5568;
+    margin-bottom: 4px;
+}
+
+/* ===== GENERAL LISTS ===== */
+section ul {
+    padding-left: 18px;
+}
+
+section ul li {
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #718096;
+    padding: 20px;
+}
