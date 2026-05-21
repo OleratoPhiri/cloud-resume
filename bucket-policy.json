@@ -2,11 +2,18 @@
     "Version": "2012-10-17",
     "Statement": [
         {
-            "Sid": "PublicReadGetObject",
+            "Sid": "AllowCloudFrontOnly",
             "Effect": "Allow",
-            "Principal": "*",
+            "Principal": {
+                "Service": "cloudfront.amazonaws.com"
+            },
             "Action": "s3:GetObject",
-            "Resource": "arn:aws:s3:::olerato-cloud-resume/*"
+            "Resource": "arn:aws:s3:::olerato-cloud-resume/*",
+            "Condition": {
+                "StringEquals": {
+                    "AWS:SourceArn": "arn:aws:cloudfront::358381946348:distribution/E24IHIG28RVRXW"
+                }
+            }
         }
     ]
 }
