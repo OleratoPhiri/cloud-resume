@@ -1,6 +1,6 @@
 # Cloud Resume Challenge
 
-A fully serverless resume website built and deployed on AWS. Live site: [ d3qz0qm8gq8x91.cloudfront.net](https://your-cloudfront-url.cloudfront.net)
+A fully serverless resume website built and deployed on AWS. Live site: [ d3qz0qm8gq8x91.cloudfront.net](https://d3qz0qm8gq8x91.cloudfront.net)
 
 \---
 
