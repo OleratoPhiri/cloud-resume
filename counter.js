@@ -1,7 +1,7 @@
 async function updateVisitorCount() {
     try {
         const response = await fetch(
-            'https://YOUR-API-ID.execute-api.us-east-1.amazonaws.com/prod/count'
+            'https://2xk63tc0ck.execute-api.us-east-1.amazonaws.com/prod/count'
         );
         const data = await response.json();
         document.getElementById('visitor-count').textContent = data.count;
