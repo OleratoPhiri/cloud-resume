@@ -67,7 +67,7 @@ Push any change to the `main` branch and GitHub Actions will sync to S3 and inva
 
 ```bash
 git add .
-git commit -m "your update"
+git commit -m "the update"
 git push
 ```
 
