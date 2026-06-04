@@ -11,7 +11,7 @@ def lambda_handler(event, context):
     It adds 1 to the count in DynamoDB and returns the new total.
     """
 
-    # Update the count — add 1 to whatever the current value is
+    # Update count — add 1 to whatever the current value is
     response = table.update_item(
         Key={'id': 'visitors'},
         UpdateExpression='SET #count = if_not_exists(#count, :start) + :increment',
@@ -27,7 +27,6 @@ def lambda_handler(event, context):
     count = int(response['Attributes']['count'])
 
     # Return the count with CORS headers
-    # CORS lets your browser (on a different domain) call this API
     return {
         'statusCode': 200,
         'headers': {
