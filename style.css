@@ -128,10 +128,14 @@ section h2 {
     padding-bottom: 0;
 }
 
-.project h3 {
-    font-size: 1rem;
+.project h3 a {
     color: #1a365d;
-    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.project h3 a:hover {
+    color: #2b6cb0;
+    text-decoration: underline;
 }
 
 .tag {
