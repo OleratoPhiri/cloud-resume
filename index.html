@@ -86,12 +86,14 @@
         </div>
 
         <div class="project">
-            <h3>Multi-Tier Web Architecture <span class="tag">VPC | EC2 | RDS | Auto Scaling</span></h3>
-            <ul>
-                <li>Designed a custom VPC across two Availability Zones with public and private subnets</li>
-                <li>Deployed EC2 web servers behind a Network Load Balancer with an Auto Scaling Group</li>
-                <li>Configured a Multi-AZ RDS database using IAM roles and least-privilege access</li>
-            </ul>
+             <h3>Multi-Tier Web Architecture <span class="tag">VPC | EC2 | RDS | NLB | Terraform</span></h3>
+    <ul>
+        <li>Built a custom VPC across two Availability Zones with public and private subnets, Internet Gateway, and NAT Gateway for secure outbound access</li>
+        <li>Deployed Apache EC2 web servers in private subnets behind a Network Load Balancer using a bootstrapped User Data script</li>
+        <li>Configured an Auto Scaling Group (min 2, max 4) with CPU-based scaling — validated self-healing by terminating an instance and confirming automatic replacement</li>
+        <li>Provisioned a Multi-AZ MySQL RDS database in private subnets with storage encryption and IAM least-privilege access</li>
+        <li>Deployed entire infrastructure as code using Terraform across 25+ resources</li>
+    </ul>
         </div>
 
         <div class="project">
